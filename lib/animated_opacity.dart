@@ -21,8 +21,8 @@ class AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> with Singl
                 return Opacity(
                   opacity: value,
                   child: Container(
-                    width: 200,
-                    height: 200,
+                    width: 150,
+                    height: 150,
                     color: Colors.blueGrey,
                   ),
                 );

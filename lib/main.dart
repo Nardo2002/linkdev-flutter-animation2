@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'animated_opacity.dart';
+import 'animated_color.dart';
 
 void main() {
   runApp(const MainApp());
@@ -22,6 +23,7 @@ class MainApp extends StatelessWidget {
           child: Column(
             children: [
               AnimatedOpacityWidget(),
+              AnimatedColorWidget(),
             ],
           ),
         ),
