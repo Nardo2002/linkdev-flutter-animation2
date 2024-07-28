@@ -8,6 +8,7 @@ import 'animated_size.dart';
 import 'animated_shape.dart';
 import 'multiple_animations.dart';
 import 'curves.dart';
+import 'animated_icon.dart';
 
 void main() {
   runApp(const MainApp());
@@ -40,6 +41,7 @@ class MainApp extends StatelessWidget {
                 AnimatedShapeWidget(),
                 MultipleAnimationsWidget(),
                 AnimatedCurvesWidget(),
+                AnimatedIconWidget(),
               ],
             ),
           ),
