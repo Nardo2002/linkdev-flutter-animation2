@@ -94,32 +94,5 @@ class MultipleAnimationsWidgetState extends State<MultipleAnimationsWidget>
         ),
       ],
     );
-    // return Column(
-    //   children: [
-    //     TweenAnimationBuilder(
-    //         duration: const Duration(seconds: 1),
-    //         tween: ColorTween(
-    //             begin: Colors.brown,
-    //             end: isAnimated ? Colors.brown : Colors.blueGrey),
-    //         builder: (context, value, child) {
-    //           return Container(
-    //             width: 150,
-    //             height: 150,
-    //             color: value,
-    //           );
-    //         }),
-    //     Padding(
-    //       padding: const EdgeInsets.all(10),
-    //       child: ElevatedButton(
-    //         onPressed: () {
-    //           setState(() {
-    //             isAnimated = !isAnimated;
-    //           });
-    //         },
-    //         child: const Text('change color'),
-    //       ),
-    //     ),
-    //   ],
-    // );
   }
 }
