@@ -6,6 +6,7 @@ import 'animated_scale.dart';
 import 'animated_rotation.dart';
 import 'animated_size.dart';
 import 'animated_shape.dart';
+import 'multiple_animations.dart';
 
 void main() {
   runApp(const MainApp());
@@ -21,7 +22,7 @@ class MainApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text('Tween Animation', style: TextStyle(color: Colors.white)),
             centerTitle: true,
-            backgroundColor: Colors.blueGrey,
+            backgroundColor: Colors.blueGrey[300],
           ),
           body: const Center(
         child: SingleChildScrollView(
@@ -36,6 +37,7 @@ class MainApp extends StatelessWidget {
                 AnimatedRotationWidget(),
                 AnimatedSizeWidget(),
                 AnimatedShapeWidget(),
+                MultipleAnimationsWidget(),
               ],
             ),
           ),
