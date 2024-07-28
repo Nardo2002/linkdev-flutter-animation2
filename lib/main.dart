@@ -3,6 +3,7 @@ import 'animated_opacity.dart';
 import 'animated_color.dart';
 import 'animated_position.dart';
 import 'animated_scale.dart';
+import 'animated_rotation.dart';
 
 void main() {
   runApp(const MainApp());
@@ -30,6 +31,7 @@ class MainApp extends StatelessWidget {
                 AnimatedColorWidget(),
                 AnimatedPositionWidget(),
                 AnimatedScaleWidget(),
+                AnimatedRotationWidget(),
               ],
             ),
           ),
