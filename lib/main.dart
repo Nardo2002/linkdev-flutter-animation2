@@ -5,6 +5,7 @@ import 'animated_position.dart';
 import 'animated_scale.dart';
 import 'animated_rotation.dart';
 import 'animated_size.dart';
+import 'animated_shape.dart';
 
 void main() {
   runApp(const MainApp());
@@ -34,6 +35,7 @@ class MainApp extends StatelessWidget {
                 AnimatedScaleWidget(),
                 AnimatedRotationWidget(),
                 AnimatedSizeWidget(),
+                AnimatedShapeWidget(),
               ],
             ),
           ),
