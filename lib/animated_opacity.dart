@@ -7,7 +7,7 @@ class AnimatedOpacityWidget extends StatefulWidget {
   AnimatedOpacityWidgetState createState() => AnimatedOpacityWidgetState();
 }
 
-class AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> with SingleTickerProviderStateMixin {
+class AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> {
   bool isVisible = true;
 
   @override
@@ -15,19 +15,19 @@ class AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> with Singl
     return Column(
       children: [
         TweenAnimationBuilder(
-              duration: const Duration(seconds: 2),
-              tween: Tween<double>(begin: 1.0, end: isVisible ? 1.0 : 0.0),
-              builder: (BuildContext context, double value, Widget? child) {
-                return Opacity(
-                  opacity: value,
-                  child: Container(
-                    width: 150,
-                    height: 150,
-                    color: Colors.blueGrey,
-                  ),
-                );
-              },
-            ),
+          duration: const Duration(seconds: 2),
+          tween: Tween<double>(begin: 1.0, end: isVisible ? 1.0 : 0.0),
+          builder: (BuildContext context, double value, Widget? child) {
+            return Opacity(
+              opacity: value,
+              child: Container(
+                width: 150,
+                height: 150,
+                color: Colors.blueGrey,
+              ),
+            );
+          },
+        ),
         Padding(
           padding: const EdgeInsets.all(10),
           child: ElevatedButton(
@@ -43,4 +43,3 @@ class AnimatedOpacityWidgetState extends State<AnimatedOpacityWidget> with Singl
     );
   }
 }
-

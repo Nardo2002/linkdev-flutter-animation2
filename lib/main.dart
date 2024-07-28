@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'animated_opacity.dart';
 import 'animated_color.dart';
+import 'animated_position.dart';
 
 void main() {
   runApp(const MainApp());
@@ -20,11 +21,15 @@ class MainApp extends StatelessWidget {
           ),
           body: const Center(
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              AnimatedOpacityWidget(),
-              AnimatedColorWidget(),
-            ],
+          child: Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Column(
+              children: [
+                AnimatedOpacityWidget(),
+                AnimatedColorWidget(),
+                AnimatedPositionWidget(),
+              ],
+            ),
           ),
         ),
       )),

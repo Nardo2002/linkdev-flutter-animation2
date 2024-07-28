@@ -7,8 +7,7 @@ class AnimatedColorWidget extends StatefulWidget {
   AnimatedColorWidgetState createState() => AnimatedColorWidgetState();
 }
 
-class AnimatedColorWidgetState extends State<AnimatedColorWidget>
-    with SingleTickerProviderStateMixin {
+class AnimatedColorWidgetState extends State<AnimatedColorWidget> {
   bool isBrown = true;
 
   @override
@@ -19,7 +18,7 @@ class AnimatedColorWidgetState extends State<AnimatedColorWidget>
             duration: const Duration(seconds: 2),
             tween: ColorTween(
                 begin: Colors.brown,
-                end: isBrown ?  Colors.brown: Colors.blueGrey),
+                end: isBrown ? Colors.brown : Colors.blueGrey),
             builder: (context, value, child) {
               return Container(
                 width: 150,
