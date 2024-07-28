@@ -15,10 +15,10 @@ class AnimatedPositionWidgetState extends State<AnimatedPositionWidget> {
     return Column(
       children: [
         TweenAnimationBuilder(
-          duration: const Duration(seconds: 2),
+          duration: const Duration(seconds: 1),
           tween: Tween<Offset>(
               begin: const Offset(0, 0),
-              end: isMoved ? const Offset(0, 0) : const Offset(0, 50)),
+              end: isMoved ? const Offset(0, 0) : const Offset(20, 20)),
           builder: (BuildContext context, Offset value, Widget? child) {
             return Transform.translate(
               offset: value,

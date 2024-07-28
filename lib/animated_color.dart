@@ -15,7 +15,7 @@ class AnimatedColorWidgetState extends State<AnimatedColorWidget> {
     return Column(
       children: [
         TweenAnimationBuilder(
-            duration: const Duration(seconds: 2),
+            duration: const Duration(seconds: 1),
             tween: ColorTween(
                 begin: Colors.brown,
                 end: isBrown ? Colors.brown : Colors.blueGrey),

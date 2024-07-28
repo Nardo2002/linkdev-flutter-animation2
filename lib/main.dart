@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'animated_opacity.dart';
 import 'animated_color.dart';
 import 'animated_position.dart';
+import 'animated_scale.dart';
 
 void main() {
   runApp(const MainApp());
@@ -28,6 +29,7 @@ class MainApp extends StatelessWidget {
                 AnimatedOpacityWidget(),
                 AnimatedColorWidget(),
                 AnimatedPositionWidget(),
+                AnimatedScaleWidget(),
               ],
             ),
           ),
