@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'animated_opacity.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +10,22 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+          appBar: AppBar(
+            title: const Text('Tween Animation', style: TextStyle(color: Colors.white)),
+            centerTitle: true,
+            backgroundColor: Colors.blueGrey,
+          ),
+          body: const Center(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              AnimatedOpacityWidget(),
+            ],
+          ),
         ),
-      ),
+      )),
     );
   }
 }
